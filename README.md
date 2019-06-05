@@ -1,2 +1,1 @@
-# JavaScript
-Learn JavaScript
+# Repository C++
