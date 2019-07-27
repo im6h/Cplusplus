@@ -17,6 +17,7 @@ class Sach{
 		void xemmh(){
 			cout<<"\n"<<ma<<":"<<tenSach;
 		}
+	friend class dmSach;	
 };
 class dmSach{
 	private:
@@ -43,6 +44,15 @@ class dmSach{
 		}
 		dmSach();
 		dmSach(const char tep[20]);
+		char *xemten(int ma){
+			char *ts = new char[20];
+			for (int i=0;i<tsSach;++i){
+				if(dm[i].ma == ma){
+					strcpy(ts,dm[i].tenSach);
+				}
+			}
+			return ts;
+		}
 };
 dmSach::dmSach(const char tep[20]){
 	fstream fdoc(tep,ios::in|ios::binary);
@@ -52,7 +62,6 @@ dmSach::dmSach(const char tep[20]){
 }
 int main(){
 	dmSach s("sach.dat");
-	s.nhapbp();
-	s.ghitep();
+	cout<<"\nSach co ma 3: "<<s.xemten(3);
 	return 0;
 }
