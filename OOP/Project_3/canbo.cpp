@@ -79,7 +79,7 @@ class bangluong{
 			}
 		}
 		void ghitep(){
-			fstream fghi("Bang luong",ios::out|ios::binary);
+			fstream fghi("Bangluong.dat",ios::out|ios::binary);
 			fghi.write(reinterpret_cast<char *>(this),sizeof(bangluong));
 			cout<<"\nGhi thanh cong";
 			fghi.close();
