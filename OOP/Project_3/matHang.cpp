@@ -97,13 +97,13 @@ class phieuxuat{
 };
 
 int main(){
-//	banggia c;
-//	c.nhapbp();
-//	c.xemmh();
+	banggia c;
+	c.nhapbp();
+	c.xemmh();
 	phieuxuat px;
-//	px.nhapbp(c);
-//	px.xemmh();
-//	px.ghitep();
-	px.doctep();
+	px.nhapbp(c);
+	px.xemmh();
+	px.ghitep();
+//	px.doctep();
 	return 0;
 }
